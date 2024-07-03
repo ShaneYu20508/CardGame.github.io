@@ -141,14 +141,14 @@
                         text: '破壞輪！',
                         imageUrl: './yugiohthing/bbw6.jpg',
                         imageAlt: 'Custom image',
-                        confirmButtonText: '重新開始'
+                        confirmButtonText: '重新開始',
+                        allowOutsideClick: false, 
+                        allowEscapeKey: false 
                     }).then((result) => {
                         if (result.isConfirmed) {
                             resetGame();
                         }
                     })
-                    // alert('魔法卡，破壞輪發動！');
-                    // resetGame();
                 }, 200);
             }
 
@@ -162,7 +162,9 @@
                         imageWidth: 400,
                         imageHeight: 200,
                         imageAlt: 'Custom image',
-                        confirmButtonText: '重新開始'
+                        confirmButtonText: '重新開始',
+                        allowOutsideClick: false, 
+                        allowEscapeKey: false 
                     }).then((result) => {
                         if (result.isConfirmed) {
                             resetGame();
